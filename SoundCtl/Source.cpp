@@ -128,7 +128,7 @@ int main(int argc, char* argv[])
 				message_timer(5);
 				return 0;
 			}
-			const float sum = std::max(0.0f, device_change + dev.get_volume());
+			const float sum = std::max(0.0f, - device_change + dev.get_volume());
 			dev.set_volume(sum);
 		}
 
